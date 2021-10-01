@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import GoogleMapReact from 'google-map-react';
 import AnyReactComponent from './any_component';
+import createMapOptions from '../helpers/create_map_options';
 
 const SimpleMap = ({ props }) => {
   const { center, zoom } = props;
@@ -12,6 +13,7 @@ const SimpleMap = ({ props }) => {
         //   bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
         defaultCenter={center}
         defaultZoom={zoom}
+        options={createMapOptions}
       >
         <AnyReactComponent
           lat={27.354546}
