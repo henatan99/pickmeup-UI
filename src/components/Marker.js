@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Marker = ({ text, onClick }) => (
-  <button type="button" className="marker-btn" onClick={onClick}>
-    <i className="marker" alt={text} />
-  </button>
+  <i role="button" onClick={onClick} className="marker" aria-hidden="true" alt={text} />
 );
 
 Marker.defaultProps = {
