@@ -9,9 +9,13 @@
   margin-left: 0;
   
   border-radius: 50%;
-  border: 8px solid #fff;
+  border: 8px solid #ffffff;
   width: 8px;
   height: 8px;
+}
+
+.marker :hover {
+  z-index: 1;
 }
 
 .marker::after {
@@ -25,11 +29,28 @@
   border-top: 17px solid #fff;
 }
 
-.marker-btn {
-  background: none;
+.marker::after :hover {
+  z-index: 1;
 }
-
 .map-view {
   height: 100vh;
   width: 100%;
 }
+
+.location-btn {
+  position: absolute;
+  top: 5vh;
+  z-index: 10;
+}
+
+.info-window {
+  position: relative;
+  bottom: 150;
+  left: -45px;
+  width: 220;
+  background-color: #78a9ff;
+  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.3);
+  padding: 10;
+  font-size: 8;
+  z-index: 100;
+};

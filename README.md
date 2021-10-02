@@ -1,5 +1,7 @@
 # Students Finder UI 
-This is a front-end UI app for pickmeup application which gives taxi ride service for users by making use of google map API.
+This is a front-end UI app for pickmeup application which locates current location of users by making use of react-google-map API.
+
+![Screenshot](docs/map.png)
 
 ## Getting Started
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -41,6 +43,8 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ### Usage
+The provided API for Geocode functionality is not working due to billing issue. You can input your own apiKey by settine the apiKey in `src/helpers/geo_code` file.
+ 
 Run the app in local server after setting it up. Then, enjoy the ride. 
 
 ## Authors
