@@ -1,11 +1,11 @@
 import './App.css';
 import { Container } from 'react-bootstrap';
-import SimpleMap from './components/simple_map';
+import MapView from './components/MapView';
 
 function App() {
   return (
     <Container className="App">
-      <SimpleMap />
+      <MapView />
     </Container>
   );
 }

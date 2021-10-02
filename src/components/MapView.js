@@ -1,31 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import GoogleMapReact from 'google-map-react';
-import AnyReactComponent from './any_component';
+import { Container } from 'react-bootstrap';
+import Marker from './Marker';
 import createMapOptions from '../helpers/create_map_options';
 
-const SimpleMap = ({ props }) => {
+const MapView = ({ props }) => {
   const { center, zoom } = props;
   return (
   // Important! Always set the container height explicitly
-    <div style={{ height: '100vh', width: '100%' }}>
+    <Container className="map-view">
       <GoogleMapReact
         //   bootstrapURLKeys={{ key: /* YOUR KEY HERE */ }}
         defaultCenter={center}
         defaultZoom={zoom}
         options={createMapOptions}
       >
-        <AnyReactComponent
+        <Marker
           lat={27.354546}
           lng={45.013545}
-          text="My Marker"
         />
       </GoogleMapReact>
-    </div>
+    </Container>
   );
 };
 
-SimpleMap.defaultProps = {
+MapView.defaultProps = {
   props: {
     center: {
       lat: 27.35,
@@ -40,7 +40,7 @@ SimpleMap.defaultProps = {
   zoom: 11,
 };
 
-SimpleMap.propTypes = {
+MapView.propTypes = {
   props: PropTypes.shape({
     center: PropTypes.shape({
       lat: PropTypes.number,
@@ -55,4 +55,4 @@ SimpleMap.propTypes = {
   zoom: PropTypes.number,
 };
 
-export default SimpleMap;
+export default MapView;
