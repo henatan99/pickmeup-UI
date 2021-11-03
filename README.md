@@ -19,6 +19,9 @@ To get a local copy up and running, please follow the below steps.
 - cd to the project directory 
 `cd pickmeup-ui`
 
+- checkout to current branch 
+`git checkout find-me-google-map`
+
 - Install dependancies 
 `npm install`
 
