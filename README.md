@@ -46,7 +46,7 @@ Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ### Usage
-The provided API for Geocode functionality is not working due to billing issue. You can input your own apiKey by settine the apiKey in `src/helpers/geo_code` file.
+The provided API for Geocode functionality is not working due to billing issue. You can input your own apiKey by setting the apiKey in `src/helpers/geo_code` file.
  
 Run the app in local server after setting it up. Then, enjoy the ride. 
 
@@ -69,8 +69,7 @@ Give a :star:️ if you like this project!
 ## Acknowledgment 
 
 - Facebook team who created creat-react-app API
-- [Google fonts](https://fonts.google.com/specimen/Raleway)
-- [hatchways API](https://api.hatchways.io/assessment/students) 
+- [GoogleMaps](https://github.com/google-map-react/google-map-react)
 
 ## :memo: License
 
