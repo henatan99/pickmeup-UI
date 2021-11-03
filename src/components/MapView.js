@@ -13,17 +13,21 @@ const MapView = () => {
   const [error, setError] = useState('');
 
   const myAddress = async () => {
+    // alert('I am clicked');
     try {
       const currentAddress = await getAddress(currentLoc.lat, currentLoc.lat);
       setAddress(currentAddress);
+      alert(`I am ${currentAddress}`);
     } catch (error) {
       setError(error);
+      alert(`I am ${error}`);
     }
   };
 
   const handleClick = () => {
     navigator.geolocation.getCurrentPosition(
       (position) => {
+        alert(`I am ${currentLoc.lat}, ${currentLoc.lng}`);
         setCurrentLoc({ lat: position.coords.latitude, lng: position.coords.longitude });
       },
       (error) => {
